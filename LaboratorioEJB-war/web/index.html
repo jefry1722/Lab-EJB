@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Calculadora JEE</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <h1>Calculadora</h1>
+        <form action="./CalcServlet" method="POST">
+            <input type="text" name="val1"/>
+            <input type="text" name="val2"/>
+            <select name="lista">
+                <option>sumar</option>
+                <option>restar</option>
+                <option>multiplicar</option>
+                <option>dividir</option>
+                <option>modulo</option>
+                <option>cuadrado</option>
+            </select>
+            <input type="submit" value="enviar"/>
+            
+        </form>
+    </body>
+</html>
