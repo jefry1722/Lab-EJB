@@ -53,6 +53,7 @@ public class CalcServlet extends HttpServlet {
             out.println("<title>Servlet CalcServlet</title>");            
             out.println("</head>");
             out.println("<body>");
+
             switch(operacion){
                 case "sumar":
                     out.println("<h1> suma= " + calcbean.sumar(v1, v2) + "</h1>");
