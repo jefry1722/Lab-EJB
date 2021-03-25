@@ -13,17 +13,18 @@ and open the template in the editor.
     <body>
         <h1>Calculadora</h1>
         <form action="./CalcServlet" method="POST">
-            <input type="text" name="val1"/>
-            <input type="text" name="val2"/>
-            <select name="lista">
-                <option>sumar</option>
-                <option>restar</option>
-                <option>multiplicar</option>
-                <option>dividir</option>
-                <option>modulo</option>
-                <option>cuadrado</option>
-            </select>
-            <input type="submit" value="enviar"/>
+            Digite el primer número<br>
+            <input type="text" name="val1"/><br>
+            Digite el segundo número<br>
+            <input type="text" name="val2"/><br>
+            
+            Seleccione la operación<br>
+            <input type="submit" value="+" name="operacion"/>
+            <input type="submit" value="-" name="operacion"/>
+            <input type="submit" value="*" name="operacion"/>
+            <input type="submit" value="/" name="operacion"/>
+            <input type="submit" value="%" name="operacion"/>
+            <input type="submit" value="^" name="operacion"/>
             
         </form>
     </body>

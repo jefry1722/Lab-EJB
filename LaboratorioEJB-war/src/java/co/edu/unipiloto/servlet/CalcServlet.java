@@ -45,7 +45,7 @@ public class CalcServlet extends HttpServlet {
             
             int v1=Integer.parseInt(request.getParameter("val1"));
             int v2=Integer.parseInt(request.getParameter("val2"));
-            String operacion=request.getParameter("lista");
+            String operacion=request.getParameter("operacion");
             
             out.println("<!DOCTYPE html>");
             out.println("<html>");
@@ -55,23 +55,24 @@ public class CalcServlet extends HttpServlet {
             out.println("<body>");
 
             switch(operacion){
-                case "sumar":
-                    out.println("<h1> suma= " + calcbean.sumar(v1, v2) + "</h1>");
+                case "+":
+                    out.println("<h1> Suma= " + calcbean.sumar(v1, v2) + "</h1>");
                     break;
-                case "restar":
-                    out.println("<h1> resta= " + calcbean.restar(v1, v2) + "</h1>");
+                case "-":
+                    out.println("<h1> Resta= " + calcbean.restar(v1, v2) + "</h1>");
                     break;
-                case "multiplicar":
-                    out.println("<h1> multiplicación= " + calcbean.multiplicar(v1, v2) + "</h1>");
+                case "*":
+                    out.println("<h1> Multiplicación= " + calcbean.multiplicar(v1, v2) + "</h1>");
                     break;
-                case "dividir":
-                    out.println("<h1> división= " + calcbean.dividir(v1, v2) + "</h1>");
+                case "/":
+                    out.println("<h1> División= " + calcbean.dividir(v1, v2) + "</h1>");
                     break;
-                case "modulo":
-                    out.println("<h1> módulo= " + calcbean.modulo(v1, v2) + "</h1>");
+                case "%":
+                    out.println("<h1> Módulo= " + calcbean.modulo(v1, v2) + "</h1>");
                     break;
-                case "cuadrado":
-                    out.println("<h1> cuadrado= " + calcbean.cuadrado(v1) + "</h1>");
+                case "^":
+                    out.println("<h1> Cuadrado Primer número= " + calcbean.cuadrado(v1) + "</h1>");
+                    out.println("<h1> Cuadrado Segundo número= " + calcbean.cuadrado(v2) + "</h1>");
                     break;
             }
             out.println("</body>");
